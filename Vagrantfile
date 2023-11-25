@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
         control.vm.hostname = "control"
         control.vm.synced_folder "C:/Users/Sammy/kubernetes_repo/Ansible", "/vagrant_data"
         control.vm.provider "virtualbox" do |vb|
-            vb.memory = "1024"
+            vb.memory = "2048"
             vb.name = "control"
         end
     end
